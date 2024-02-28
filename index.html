@@ -15,8 +15,8 @@
       rel="stylesheet"
     />
     <title>Advanced Landing Page</title>
-    <script type="module" crossorigin src="/assets/index-aClmIl32.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-hAWtRsUX.css">
+    <script type="module" crossorigin src="/assets/index-PhYCMDSH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-57VSmeZr.css">
   </head>
   <body>
     <div class="loader"></div>
@@ -704,6 +704,106 @@
                 </div>
               </div>
             </article>
+            <article class="review-card">
+              <img
+                src="img/section-review/house-2-small.png"
+                srcset="img/section-review/house-2-small.png 392w, img/section-review/house-2.png 784w"
+                sizes="(max-width: 600px) 1vw"
+                alt="house"
+                class="review-card__background-image"
+              />
+              <div class="review-card__content">
+                <h4 class="text-heading-small color-black">
+                  My house sold out fast!
+                </h4>
+                <p class="text-label color-grey-dark">
+                  I was finally able to sell my house quickly through Hounter by
+                  immediately setting me up with people who wanted my house. I
+                  also do not get a discount from the sale of my house. Awesome!
+                </p>
+                <div class="reviewer">
+                  <div class="reviewer__info">
+                    <img
+                      src="img/house-slider-img/avatar1.jpeg"
+                      alt="a woman"
+                    />
+                    <div class="reviewer__info-text">
+                      <h5 class="text-subtitle color-black">Dianne Russell</h5>
+                      <p class="text-label color-grey">Manchester, Kentucky</p>
+                    </div>
+                  </div>
+                  <div class="reviewer__rating">
+                    <img src="img/utilities/star.svg" alt="star" />
+                    <h4 class="text-heading-small color-black">4.3</h4>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="review-card">
+              <img
+                src="img/section-review/house-1-small.png"
+                srcset="img/section-review/house-1-small.png 392w, img/section-review/house-1.png 784w"
+                sizes="(max-width: 600px) 1vw"
+                alt="house"
+                class="review-card__background-image"
+              />
+              <div class="review-card__content">
+                <h4 class="text-heading-small color-black">
+                  Best! I got the house I wanted through Hounter
+                </h4>
+                <p class="text-label color-grey-dark">
+                  Through this website I can get a house with the type and
+                  specifications I want very easily, without a complicated
+                  process to be able to find information on the house we want.
+                </p>
+                <div class="reviewer">
+                  <div class="reviewer__info">
+                    <img src="img/section-hero/avatar2.jpeg" alt="a woman" />
+                    <div class="reviewer__info-text">
+                      <h5 class="text-subtitle color-black">Jenny Wilson</h5>
+                      <p class="text-label color-grey">Manager Director</p>
+                    </div>
+                  </div>
+                  <div class="reviewer__rating">
+                    <img src="img/utilities/star.svg" alt="star" />
+                    <h4 class="text-heading-small color-black">4.6</h4>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="review-card">
+              <img
+                src="img/section-review/house-3-small.png"
+                srcset="img/section-review/house-3-small.png 392w, img/section-review/house-3.png 784w"
+                sizes="(max-width: 600px) 1vw"
+                alt="house"
+                class="review-card__background-image"
+              />
+              <div class="review-card__content">
+                <h4 class="text-heading-small color-black">
+                  Through the Hounter, I can get a house for my self
+                </h4>
+                <p class="text-label color-grey-dark">
+                  By looking for information about what kind of house we want,
+                  we managed to get the house we wanted very quickly, and
+                  directly connected with the seller to be able to ask about the
+                  details, very helpful!
+                </p>
+                <div class="reviewer">
+                  <div class="reviewer__info">
+                    <img src="img/house-slider-img/avatar3.jpeg" alt="a man" />
+                    <div class="reviewer__info-text">
+                      <h5 class="text-subtitle color-black">Ronald Richards</h5>
+                      <p class="text-label color-grey">Head of Marketing</p>
+                    </div>
+                  </div>
+                  <div class="reviewer__rating">
+                    <img src="img/utilities/star.svg" alt="star" />
+                    <h4 class="text-heading-small color-black">4.6</h4>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
         <div class="review-slider-dots"></div>
@@ -981,7 +1081,9 @@
               type="text"
               placeholder="Your email here"
               aria-label="email"
+              class="email-bar__input"
             />
+            <div class="email-bar__error"></div>
             <button class="btn btn-primary">Subscribe Now</button>
           </div>
         </div>
@@ -1014,12 +1116,17 @@
             </div>
             <div class="label-input">
               <label for="form_education">Education</label>
-              <select name="form_education" id="form_education">
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="javascript">JavaScript</option>
-                <option value="react">React</option>
-              </select>
+              <div class="dropdown-form" id="form_education" tabindex="0">
+                <a class="dropdown-form__property" aria-label="Education"
+                  >Select</a
+                >
+                <div class="dropdown-form__content">
+                  <a aria-label="HTML" tabindex="0">HTML</a>
+                  <a aria-label="CSS" tabindex="0">CSS</a>
+                  <a aria-label="JS" tabindex="0">JS</a>
+                  <a aria-label="React" tabindex="0">React</a>
+                </div>
+              </div>
             </div>
 
             <div class="label-input label-input--message">
@@ -1039,7 +1146,7 @@
             </div>
 
             <div class="form_consent_container">
-              <input type="checkbox" id="form_consent" />
+              <input type="checkbox" id="form_consent" tabindex="0" />
               <p class="text-label color-grey-dark">
                 I give consent to the processing of my personal data given in
                 the contact form above under the terms and conditions of Grid
@@ -1050,5 +1157,64 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__info">
+          <img
+            src="img/section-hero/Logo.svg"
+            alt="logo"
+            class="footer__logo"
+          />
+          <p class="text-label">
+            We provide information about properties such as houses, villas and
+            apartments to help people find their dream home
+          </p>
+          <div class="social-medias">
+            <img
+              src="img/footer/facebook.svg"
+              alt="facebook"
+              class="social-medias_media"
+            />
+            <img
+              src="img/footer/twitter.svg"
+              alt="twitter"
+              class="social-medias_media"
+            />
+            <img
+              src="img/footer/pinterest.svg"
+              alt="pinterest"
+              class="social-medias_media"
+            />
+          </div>
+        </div>
+        <div class="footer__column">
+          <h5 class="text-subtitle color-black">Property</h5>
+          <ul>
+            <li class="text-label color-grey">House</li>
+            <li class="text-label color-grey">Apartament</li>
+            <li class="text-label color-grey">Villa</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h5 class="text-subtitle color-black">Article</h5>
+          <ul>
+            <li class="text-label color-grey">New Article</li>
+            <li class="text-label color-grey">Popular Article</li>
+            <li class="text-label color-grey">Most Read</li>
+            <li class="text-label color-grey">Tips & Tricks</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h5 class="text-subtitle color-black">Contact</h5>
+          <ul>
+            <li class="text-label color-grey">
+              2464 Royal Ln. Mesa, New Jersey 45463
+            </li>
+            <li class="text-label color-grey">(671) 555-0110</li>
+            <li class="text-label color-grey">info@hounter.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
